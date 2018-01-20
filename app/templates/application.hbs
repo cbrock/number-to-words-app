@@ -1,5 +1,7 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div>
+  {{input value=defaultNumber type="number" placeholder=defaultNumber}}
+</div>
+
+{{number-to-english number=defaultNumber}}
 
 {{outlet}}
