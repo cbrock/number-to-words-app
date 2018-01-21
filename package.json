@@ -1,15 +1,15 @@
 {
   "name": "number-to-words-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "Small description for number-to-words-app goes here",
+  "description": "An example ember-cli app that transforms numbers into English word equivalents",
   "license": "MIT",
-  "author": "",
+  "author": "colintbrock@gmail.com",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/cbrock/number-to-words-app",
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
