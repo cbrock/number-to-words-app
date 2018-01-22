@@ -1,5 +1,7 @@
 # number-to-words-app
 
+[![Build Status](https://travis-ci.org/cbrock/number-to-words-app.svg?branch=master)](https://travis-ci.org/cbrock/number-to-words-app)
+
 This Ember application uses the [ember-number-to-words addon](https://github.com/FutoRicky/ember-number-to-words) to allow a user to enter any positive number and see the English-word equivalent rendered below.
 
 [Try it out!](http://number-to-words-app.s3-website-us-west-2.amazonaws.com)
