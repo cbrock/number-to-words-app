@@ -1,10 +1,15 @@
-@import "normalize";
+@import 'normalize';
+
+$default-dark: #2f3238;
+$default-light: #b5b5b5;
+$default-valid: #90da64;
+$default-invalid: #da6484;
 
 @mixin text-treatments {
+  color: $default-light;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 25px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 200;
-  color: #b5b5b5;
 }
 
 html,
@@ -15,35 +20,35 @@ body,
 }
 
 .flex-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  background-color: $default-dark;
+  display: flex;
   flex-direction: column;
-  background-color: #2f3238;
+  justify-content: center;
 
   .flex-item {
     margin: 40px;
   }
-  
+
   .app-number-input {
-    @include text-treatments();
-    padding: 10px;
+    @include text-treatments;
+    background-color: $default-dark;
     border: 1px solid;
-    background-color: #2f3238;
-    border-color: #b5b5b5;
-  
+    border-color: $default-light;
+    padding: 10px;
+
     &:focus {
-      border-color: #90da64;
+      border-color: $default-valid;
     }
-  
+
     &:invalid {
-      border-color: #da6484;
+      border-color: $default-invalid;
     }
   }
-  
+
   .app-word-output {
-    @include text-treatments();
-    color: #d8d7d7;
+    @include text-treatments;
+    color: lighten($default-light, 20%);
     text-transform: capitalize;
   }
 }
