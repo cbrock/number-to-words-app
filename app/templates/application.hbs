@@ -1,7 +1,11 @@
-<div>
-  {{input value=defaultNumber type="number" placeholder=defaultNumber min="0" data-test-selector="app-number-input"}}
-</div>
+<main class="flex-container">
+  <div class="flex-item">
+    {{~input value=defaultNumber type="number" placeholder=defaultNumber class="app-number-input"~}}
+  </div>
 
-{{number-to-english number=defaultNumber class="app-word-output"}}
+  <div class="flex-item">
+    {{~number-to-words number=defaultNumber class="app-word-output"~}}
+  </div>
 
-{{outlet}}
+  {{outlet}}
+</main>

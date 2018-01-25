@@ -13,7 +13,7 @@ test('visiting /', function(assert) {
   });
 
   andThen(function() {
-    const defaultNumber = find('[data-test-selector="app-number-input"]').val();
+    const defaultNumber = find('.app-number-input').val();
     assert.equal(defaultNumber, '0', 'default input value is 0');
 
     // TODO modify component to accept `data-*` attributes.
@@ -28,7 +28,7 @@ test('modifying input updates word output', function(assert) {
 
   visit('/');
 
-  const NUMBER_SELECTOR = '[data-test-selector="app-number-input"]';
+  const NUMBER_SELECTOR = '.app-number-input';
   const WORD_SELECTOR = '.app-word-output'; 
 
   const TEST_DATA = [
